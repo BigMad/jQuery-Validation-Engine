@@ -3,7 +3,7 @@
     $.validationEngineLanguage = {
         newLang: function(){
             $.validationEngineLanguage.allRules = {
-                "required": { // Add your regex rules here, you can take telephone as an example
+                "required": { // Aggiungi le tue regole regex qui, si può prendere come esempio il telefono
                     "regex": "none",
                     "alertText": "* Campo richiesto",
                     "alertTextCheckboxMultiple": "* Per favore selezionare un'opzione",
@@ -13,7 +13,7 @@
                     "func": function(field, rules, i, options){
                         return (field.val() == "test") ? true : false;
                     },
-                    "alertText": "* Field must equal test"
+                    "alertText": "* Il campo deve essere uguale a: test"
                 },
                 "length": {
                     "regex": "none",
@@ -27,7 +27,7 @@
                 },
 				"groupRequired": {
                     "regex": "none",
-                    "alertText": "* You must fill one of the following fields"
+                    "alertText": "* È necessario compilare uno dei seguenti campi"
                 },
                 "minCheckbox": {
                     "regex": "none",
@@ -40,7 +40,7 @@
                 },
                 "creditCard": {
                     "regex": "none",
-                    "alertText": "* Non valido numero di carta di credito"
+                    "alertText": "* Numero di carta di credito non valido"
                 },
                 "phone": {
                     // credit: jquery.h5validate.js / orefalo
@@ -78,7 +78,7 @@
                     "regex": /^[0-9\ ]+$/,
                     "alertText": "* Solo numeri"
                 },
-				"onlyLetter": {
+		"onlyLetter": {
                     "regex": /^[a-zA-Z\ \']+$/,
                     "alertText": "* Solo lettere"
                 },
@@ -94,12 +94,12 @@
                     "file": "ajaxValidateFieldName",
                     "extraData": "name=eric",
                     "alertTextLoad": "* Caricamento, attendere per favore",
-                    "alertText": "* Questo user � gi� stato utilizzato"
+                    "alertText": "* Questo user è già stato utilizzato"
                 },
                 "ajaxNameCall": {
                     "file": "ajaxValidateFieldName",
-                    "alertText": "* Questo nome � gi� stato utilizzato",
-                    "alertTextOk": "* Questo nome � disponibile",
+                    "alertText": "* Questo nome è già stato utilizzato",
+                    "alertTextOk": "* Questo nome è disponibile",
                     "alertTextLoad": "* Caricamento, attendere per favore"
                 }
 
